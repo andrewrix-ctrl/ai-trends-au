@@ -1,0 +1,170 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #050816;
+  color: #f5f5f7;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Header / hero */
+
+.site-header {
+  background: linear-gradient(135deg, #ff6ec7, #ffb347, #2d5bff);
+  padding: 2.75rem 0 2.5rem;
+  color: #fff;
+}
+
+.header-inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+}
+
+.eyebrow {
+  margin: 0 0 0.3rem;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  opacity: 0.9;
+}
+
+.site-header h1 {
+  margin: 0;
+  font-size: 2.6rem;
+}
+
+.tagline {
+  margin-top: 0.6rem;
+  max-width: 560px;
+  color: #fbefff;
+}
+
+/* Sections */
+
+main {
+  padding: 2.5rem 0 3rem;
+}
+
+.section {
+  padding: 2.25rem 0;
+}
+
+.section-alt {
+  background: #0b1020;
+}
+
+.section h2 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+}
+
+/* Cards grid */
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.4rem;
+  margin-top: 1.1rem;
+}
+
+.card {
+  background: #11152a;
+  border-radius: 0.9rem;
+  padding: 1.1rem 1.3rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.card-meta {
+  font-size: 0.85rem;
+  color: #c3cafc;
+  margin-bottom: 0.5rem;
+}
+
+.card a {
+  color: #ffcc66;
+  text-decoration: none;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+/* Columns */
+
+.columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.3rem;
+}
+
+.column {
+  flex: 1 1 260px;
+  background: #0e1428;
+  border-radius: 0.9rem;
+  padding: 1.1rem 1.3rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Bullets */
+
+.bullets {
+  margin: 0.75rem 0 0;
+  padding-left: 1.4rem;
+}
+
+/* Made by AI section */
+
+.made-by-ai {
+  background: linear-gradient(120deg, #1a237e, #512da8);
+}
+
+.made-by-ai h2 {
+  color: #f5f5f7;
+}
+
+.made-by-ai a {
+  color: #ffeb3b;
+}
+
+.made-by-ai a:hover {
+  text-decoration: underline;
+}
+
+.made-by-ai .note {
+  margin-top: 0.8rem;
+  font-size: 0.9rem;
+  color: #d4d7ff;
+}
+
+/* Footer */
+
+.site-footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
+  padding: 1rem 0 1.5rem;
+  text-align: center;
+  color: #a0a4c2;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+
+@media (max-width: 640px) {
+  .site-header h1 {
+    font-size: 2.2rem;
+  }
+}
