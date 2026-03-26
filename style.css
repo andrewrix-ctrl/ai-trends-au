@@ -23,6 +23,19 @@ body {
   color: #fff;
 }
 
+.site-header a {
+  color: #c7f2f1; /* A bright, contrasting cyan/mint for links in header */
+  text-decoration: underline;
+}
+
+.site-header a:hover {
+  color: #e0ffff; /* Lighter on hover */
+}
+
+.site-header a:visited {
+  color: #aed9d8; /* Slightly darker but still visible visited state */
+}
+
 .header-inner {
   display: flex;
   flex-wrap: wrap;
