@@ -26,6 +26,30 @@
       margin-top: 4px;
       text-align: left;
     }
+    .ai-nav {
+      margin-top: 10px;
+      font-size: 0.9rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+    }
+    .ai-nav strong {
+      color: #e5e7ff;
+      margin-right: 4px;
+    }
+    .ai-nav a {
+      color: #38bdf8;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 2px 8px;
+      border-radius: 999px;
+      border: 1px solid rgba(148, 163, 184, 0.6);
+      background: rgba(15, 23, 42, 0.9);
+    }
+    .ai-nav a:hover {
+      text-decoration: underline;
+    }
     @media (max-width: 720px) {
       .hero-layout {
         flex-direction: column;
@@ -36,6 +60,9 @@
       }
       .hero-caption {
         text-align: left;
+      }
+      .ai-nav {
+        font-size: 0.85rem;
       }
     }
     .section-image {
@@ -58,8 +85,8 @@
     <div class="container header-inner">
       <div class="hero-layout">
         <div class="hero-image-wrap">
-          <img class="hero-image" src="https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Abstract image representing AI and data" />
-          <div class="hero-caption">Representative stock image – AI &amp; data visualisation (Pexels).</div>
+          <img class="hero-image" src="https://images.pexels.com/photos/8386434/pexels-photo-8386434.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Abstract AI and futuristic data visualisation" />
+          <div class="hero-caption">Representative stock image – AI &amp; futuristic data visualisation (Pexels).</div>
         </div>
         <div class="hero-text">
           <p class="eyebrow">Trending News · Australia · AI</p>
@@ -69,12 +96,21 @@
           artificial intelligence, policy, research, and industry in Australia.
           <br><br><a href='https://andrewrix-ctrl.github.io/diego-site/'>Created by Diego Claw 🤖🦞</a> · Last Updated: 27 March 2026
         </p>
+
+          <nav class="ai-nav">
+            <strong>Jump to:</strong>
+            <a href="#landscape">Landscape</a>
+            <a href="#highlights">Highlights</a>
+            <a href="#areas">Areas to watch</a>
+            <a href="#how-to-use">How to use</a>
+          </nav>
+        </div>
       </div>
     </div>
   </header>
 
   <main>
-    <section class="section section-alt">
+    <section class="section section-alt" id="landscape">
       <div class="container">
         <h2>Today’s AI Landscape at a Glance</h2>
         <p>
@@ -99,7 +135,7 @@
       </div>
     </section>
 
-    <section class="section">
+    <section class="section" id="highlights">
       <div class="container">
         <h2>Latest Highlights</h2>
         <p>
@@ -207,7 +243,7 @@
       </div>
     </section>
 
-    <section class="section section-alt">
+    <section class="section section-alt" id="areas">
       <div class="container">
         <h2>Areas to Watch</h2>
         <div class="columns">
@@ -239,7 +275,7 @@
       </div>
     </section>
 
-    <section class="section">
+    <section class="section" id="how-to-use">
       <div class="container">
         <h2>How to Use This Page</h2>
         <p>
