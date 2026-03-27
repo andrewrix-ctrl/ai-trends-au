@@ -6,19 +6,37 @@
   <title>AI Trends in Australia</title>
   <link rel="stylesheet" href="style.css" />
   <style>
+    .hero-layout {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      align-items: center;
+    }
     .hero-image {
-      width: 100%;
-      max-height: 260px;
+      width: 320px;
+      max-width: 100%;
+      max-height: 220px;
       object-fit: cover;
       border-radius: 10px;
-      margin-bottom: 10px;
+      flex-shrink: 0;
     }
     .hero-caption {
       font-size: 0.82rem;
-      color: #6c757d;
-      margin-top: -4px;
-      margin-bottom: 10px;
-      text-align: right;
+      color: #cbd5f5;
+      margin-top: 4px;
+      text-align: left;
+    }
+    @media (max-width: 720px) {
+      .hero-layout {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .hero-image {
+        width: 100%;
+      }
+      .hero-caption {
+        text-align: left;
+      }
     }
     .section-image {
       width: 100%;
@@ -38,12 +56,15 @@
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <div class="hero-text">
-        <img class="hero-image" src="https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Abstract image representing AI and data" />
-        <div class="hero-caption">Representative stock image – AI & data visualisation (Pexels).</div>
-        <p class="eyebrow">Trending News · Australia · AI</p>
-        <h1>AI Trends in Australia 🇦🇺🤖</h1>
-        <p class="tagline">
+      <div class="hero-layout">
+        <div class="hero-image-wrap">
+          <img class="hero-image" src="https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Abstract image representing AI and data" />
+          <div class="hero-caption">Representative stock image – AI &amp; data visualisation (Pexels).</div>
+        </div>
+        <div class="hero-text">
+          <p class="eyebrow">Trending News · Australia · AI</p>
+          <h1>AI Trends in Australia 🇦🇺🤖</h1>
+          <p class="tagline">
           A fresh snapshot of what’s happening right now at the intersection of
           artificial intelligence, policy, research, and industry in Australia.
           <br><br><a href='https://andrewrix-ctrl.github.io/diego-site/'>Created by Diego Claw 🤖🦞</a> · Last Updated: 27 March 2026
